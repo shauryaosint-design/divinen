@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Contact Divine Solar Energy for free site survey, subsidy help and solar installation quotes in Kanpur & Prayagraj.">
+    <meta name="theme-color" content="#0d7a3a">
+    <title>Contact Us | Divine Solar Energy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Divine Solar Energy" class="logo-img">
+            </a>
+            <nav class="nav" id="nav">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#benefits" class="nav-link">Benefits</a>
+                <a href="index.html#rates" class="nav-link">Rate List</a>
+                <a href="index.html#services" class="nav-link">Services</a>
+                <a href="index.html#products" class="nav-link">Products</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+                <a href="tel:7000979577" class="nav-cta"><i class="fas fa-phone-alt"></i> 7000979577</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Contact & Support</h1>
+            <p>Fill the form below. We will contact you shortly on WhatsApp or call.</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-card">
+                    <h2>Request Free Site Survey</h2>
+                    <p class="form-subtitle">अपना नाम, WhatsApp नंबर, ईमेल और पता भरें। हम जल्द संपर्क करेंगे।</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name <span>*</span></label>
+                            <input type="text" id="name" name="name" placeholder="आपका पूरा नाम" required autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="whatsapp">WhatsApp Number <span>*</span></label>
+                            <input type="tel" id="whatsapp" name="whatsapp" placeholder="10 digit mobile number" pattern="[0-9]{10}" required inputmode="numeric" autocomplete="tel">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address <span>*</span></label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Full Address <span>*</span></label>
+                            <textarea id="address" name="address" rows="3" placeholder="घर का पूरा पता (City / Village, District, Pin Code)" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message (Optional)</label>
+                            <textarea id="message" name="message" rows="3" placeholder="System size interest / any special requirement"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                            <i class="fas fa-paper-plane"></i> Submit Request
+                        </button>
+                        <p class="form-note">By submitting you agree to be contacted on WhatsApp / phone regarding solar installation.</p>
+                    </form>
+
+                    <div id="formSuccess" class="form-success" style="display:none;">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Request Submitted Successfully!</h3>
+                        <p>हमारी टीम जल्द ही आपसे संपर्क करेगी। धन्यवाद!</p>
+                        <a href="index.html" class="btn btn-outline">Back to Home</a>
+                    </div>
+                    <div id="formError" class="form-error" style="display:none;">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <h3>Something went wrong</h3>
+                        <p id="errorText">Please try again or call us directly.</p>
+                        <button type="button" class="btn btn-outline" onclick="resetForm()">Try Again</button>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3>Get in Touch</h3>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <strong>Phone / WhatsApp</strong>
+                                <a href="tel:7000979577">7000979577</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:support.divinesolarenergy@gmail.com">support.divinesolarenergy@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <strong>Office (Prayagraj)</strong>
+                                <p>408/2, C Y Chintamani Road, Georgetown, Prayagraj, UP – 211002</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <strong>Branch (Kanpur)</strong>
+                                <p>Arai 90, Purwa Nankari, IIT Kalyanpur, Kanpur – 208016</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card highlight">
+                        <h3><i class="fas fa-clock"></i> Working Hours</h3>
+                        <p>Monday – Saturday: 9:00 AM – 7:00 PM</p>
+                        <p>Sunday: By Appointment</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Quick Actions</h3>
+                        <a href="https://wa.me/917000979577?text=Hello%2C%20I%20want%20free%20site%20survey%20for%20solar%20panel" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                        <a href="tel:7000979577" class="btn btn-outline btn-block" style="margin-top:12px;">
+                            <i class="fas fa-phone"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <img src="logo.png" alt="Divine Solar Energy" class="footer-logo-img">
+                    </a>
+                    <p>Power of Nature – Professional solar solutions in Kanpur & surrounding areas.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#rates">Rate List</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-phone"></i> 7000979577</li>
+                        <li><i class="fas fa-envelope"></i> support.divinesolarenergy@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Divine Solar Energy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/917000979577?text=Hello%2C%20I%20want%20free%20site%20survey%20for%20solar" class="float-wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
